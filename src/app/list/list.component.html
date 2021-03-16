@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="columns list-cont">
+        <div class="row" *ngFor="let item of items.item">
+          <div class="col-12">
+              <div class="row mx-1 border-bottom">
+                <div class="col-md-2">
+                  <div class="image-list">
+                    <img (click)="watchDetails(item.id)" src="{{ item.thumbnail }} "/>
+                  </div>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                  <div class="d-flex align-items-center" (click)="watchDetails(item.id)">
+                    <h3 class="">$ {{ item.price}}</h3>
+                  </div>
+                  <p (click)="watchDetails(item.id)">{{ item.title }}</p>
+                </div>
+                <div class="col-md-2"></div>
+              </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

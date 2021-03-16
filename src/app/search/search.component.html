@@ -1,0 +1,22 @@
+<div class="primary-color">
+  <div class="container widthTotal primary-color">
+    <div class="row">
+      <div class="col-1 my-2">
+        <img alt="" src="/assets/images/LogoMeLi.png" class="image-logo img-fluid">
+      </div>
+      <div class="col-11">
+        <div class="flexContainer my-2">
+          <input (keyup.enter)="findItem(search)" type="textb" [(ngModel)]="search" name="search" class="input height-imput searchBox searchInput border-none radiusSeach-0"
+                 placeholder="Nunca dejes de buscar">
+             
+          <button (click)="findItem(search)" class="search radius-0 border-none">
+            <img alt="" src="/assets/images/buscar.png" class="image-search">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
